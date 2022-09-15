@@ -10,6 +10,16 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+-- hide virtual text for info diagnostic
+vim.diagnostic.config({
+	underline = {
+		severity = { max = vim.diagnostic.severity.INFO },
+	},
+	virtual_text = {
+		severity = { min = vim.diagnostic.severity.WARN },
+	},
+})
+
 -- nvim-cmp config
 local cmp = require("cmp")
 cmp.setup({
