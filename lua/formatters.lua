@@ -25,6 +25,9 @@ require("formatter").setup({
 		html = {
 			require("formatter.filetypes.html").prettier,
 		},
+		yaml = {
+			require("formatter.filetypes.yaml").prettier,
+		},
 		css = {
 			require("formatter.filetypes.css").prettier,
 		},
