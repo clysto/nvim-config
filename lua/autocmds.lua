@@ -2,7 +2,7 @@ local utils = require("utils")
 local autocmd = vim.api.nvim_create_autocmd
 
 autocmd("FileType", {
-	pattern = { "make", "go", "lua" },
+	pattern = { "make", "go", "lua", "tex" },
 	callback = function()
 		vim.bo.expandtab = false
 	end,

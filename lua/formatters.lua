@@ -1,4 +1,11 @@
--- formatter config
+local util = require("formatter.util")
+local function latexindent()
+	return {
+		exe = "latexindent",
+		args = { "-" },
+		stdin = true,
+	}
+end
 require("formatter").setup({
 	logging = true,
 	log_level = vim.log.levels.WARN,
@@ -36,6 +43,9 @@ require("formatter").setup({
 		},
 		go = {
 			require("formatter.filetypes.go").gofmt,
+		},
+		tex = {
+			latexindent,
 		},
 	},
 })
