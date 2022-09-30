@@ -2,10 +2,11 @@ local util = require("formatter.util")
 local function latexindent()
 	return {
 		exe = "latexindent",
-		args = { "-" },
+		args = { "-l -m" },
 		stdin = true,
 	}
 end
+
 require("formatter").setup({
 	logging = true,
 	log_level = vim.log.levels.WARN,
