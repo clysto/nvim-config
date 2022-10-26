@@ -15,3 +15,4 @@ opt.listchars = "lead:·,tab:  →,trail:·"
 -- opt.listchars = "trail:·,tab:→ "
 opt.termguicolors = true
 opt.mouse = "a"
+opt.colorcolumn = "80"
