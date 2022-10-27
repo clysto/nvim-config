@@ -28,4 +28,8 @@ return require("packer").startup(function(use)
 	use("numToStr/Comment.nvim")
 	use("noib3/nvim-cokeline")
 	use("windwp/nvim-autopairs")
+	use({
+		"kylechui/nvim-surround",
+		tag = "*",
+	})
 end)
