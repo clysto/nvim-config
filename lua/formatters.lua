@@ -24,7 +24,6 @@ require("formatter").setup({
 		},
 		python = {
 			require("formatter.filetypes.python").black,
-			require("formatter.filetypes.python").isort,
 		},
 		c = {
 			require("formatter.filetypes.c").clangformat,
