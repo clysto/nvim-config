@@ -7,6 +7,14 @@ local function latexindent()
 	}
 end
 
+local function verible()
+	return {
+		exe = "verible-verilog-format",
+		args = { "--indentation_spaces=4 --column_limit=80 -" },
+		stdin = true,
+	}
+end
+
 require("formatter").setup({
 	logging = true,
 	log_level = vim.log.levels.WARN,
@@ -44,6 +52,9 @@ require("formatter").setup({
 		},
 		go = {
 			require("formatter.filetypes.go").gofmt,
+		},
+		verilog = {
+			verible,
 		},
 		tex = {
 			latexindent,
