@@ -5,7 +5,7 @@ local bufopts = { noremap = true, silent = true, buffer = bufnr }
 vim.keymap.set("n", "<leader>q", ":bd<CR>", bufopts)
 vim.keymap.set("n", "<C-p>", ":Telescope find_files<CR>", bufopts)
 vim.keymap.set("n", "<leader>b", ":Telescope buffers<CR>", bufopts)
-vim.keymap.set("n", "<C-F>", ":Telescope live_grep<CR>", bufopts)
+vim.keymap.set("n", "<CS-f>", ":Telescope live_grep<CR>", bufopts)
 vim.keymap.set("n", "<leader>tr", ":Telescope resume<CR>", bufopts)
 vim.keymap.set("n", "<leader>f", ":Telescope file_browser initial_mode=normal<CR>", bufopts)
 vim.keymap.set("n", "<leader>X", ":wqa<CR>", bufopts)
