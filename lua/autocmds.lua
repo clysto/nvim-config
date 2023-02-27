@@ -9,7 +9,7 @@ autocmd("FileType", {
 })
 
 autocmd("FileType", {
-	pattern = { "lua", "javascript", "html", "css", "yaml", "json" },
+	pattern = { "lua", "javascript", "html", "css", "yaml", "json", "vue" },
 	callback = function()
 		utils.tab_width(2)
 	end,

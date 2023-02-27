@@ -8,7 +8,6 @@ require("telescope").setup({
 		case_mode = "smart_case",
 	},
 })
-require("telescope").load_extension("file_browser")
 require("telescope").load_extension("fzf")
 require("Comment").setup()
 require("gitsigns").setup({
@@ -18,3 +17,4 @@ require("gitsigns").setup({
 		vim.keymap.set("n", "<leader>hp", gs.preview_hunk, bufopts)
 	end,
 })
+require("neo-tree").setup()

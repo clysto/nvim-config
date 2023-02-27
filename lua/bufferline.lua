@@ -1,8 +1,9 @@
 local get_hex = require("cokeline/utils").get_hex
+
 require("cokeline").setup({
 	show_if_buffers_are_at_least = 2,
 	buffers = {
-		-- focus_on_delete = "prev",
+		focus_on_delete = "prev",
 	},
 	default_hl = {
 		fg = function(buffer)

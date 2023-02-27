@@ -27,6 +27,9 @@ require("formatter").setup({
 		javascript = {
 			require("formatter.filetypes.javascript").prettier,
 		},
+		vue = {
+			require("formatter.filetypes.vue").prettier,
+		},
 		json = {
 			require("formatter.filetypes.json").prettier,
 		},
